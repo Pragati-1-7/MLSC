@@ -1,0 +1,4 @@
+algosdk>=2.0.0
+python-dotenv
+pandas
+scikit-learn
