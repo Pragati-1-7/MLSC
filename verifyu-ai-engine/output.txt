@@ -1,0 +1,26 @@
+...E.
+======================================================================
+ERROR: test_responder_trigger (tests.test_flow.TestVerifyUAI.test_responder_trigger)
+Test that responder constructs a transaction
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\OMSAI\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1387, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\algorand\MLSC\verifyu-ai-engine\tests\test_flow.py", line 98, in test_responder_trigger
+    tx_id = responder.trigger_emergency_poll(123, "class_101")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\algorand\MLSC\verifyu-ai-engine\responder.py", line 53, in trigger_emergency_poll
+    account.Account(private_key)
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'algosdk.account' has no attribute 'Account'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.011s
+
+FAILED (errors=1)
+Absence Rate: 40.00%
+Absence Rate: 41.00%
+Absence Rate: 50.00%
+Absence Rate: 20.00%
+Fetched Box 'class_101': Total=50, Present=25
